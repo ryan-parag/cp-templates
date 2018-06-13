@@ -15,7 +15,7 @@ Themed confirmation and receipt templates. Templates are made using MJML and it'
 - ~~~Packing Confirmation~~~
 - ~~~Disclosure Script~~~
 
-##### Author
+### Author
 Hello! I'm Ryan. I'm a Product Designer based in Tampa, Florida. ✌🏼
 
 I currently work at Chargebacks911 where I help build digital products and visual assets. I'm passionate about solving problems through design, experimenting with new and effective creative principles, and searching for the elusive Arizona Black and White Iced Tea.
