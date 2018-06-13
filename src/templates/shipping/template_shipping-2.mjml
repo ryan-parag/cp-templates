@@ -1,0 +1,108 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Arimo" href="https://fonts.googleapis.com/css?family=Arimo" />
+    <mj-attributes>
+       <mj-all font-family="Arimo, Arial, sans-serif"/>
+    </mj-attributes>
+    <mj-style inline="inline">
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-section border-bottom="1px solid black">
+      <mj-column>
+        <mj-text font-weight="700" font-size="22px" color="black">{{ merchant_name }}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text line-height="20px" font-size="13px" align="right" color="black">Billing Reminder<br>No : {{ billing_id }}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px" border-bottom="1px solid black">
+      <mj-column>
+        <mj-text font-size="13px" align="left" color="black" line-height="1.6">
+          <p>Dear {{ full_name }},<br>This is a friendly reminder that your recurring payment had been processed on {{ process_date }}. Please be advised your next payment will occur 30 days from this date. Below you will find the order summary and payment information about your recurring payment.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-section padding-bottom="0px">
+          <mj-column>
+            <mj-text font-weight="700" font-size="19px" color="black">Payment Information</mj-text>
+          </mj-column>
+        </mj-section>
+        <mj-text font-size="13px" color="black">
+          <span>Delvered to:</span>
+          <br>
+          <br>
+          <strong>Kimi Raikkonen</strong>
+          <br>
+          <br>
+          <span>630 Chestnut St.</span>
+          <br>
+          <br>
+          <span>Bldg. 5 Unit #1234</span>
+          <br>
+          <br>
+          <span>Clearwater, FL 123456</span>
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-section padding-bottom="0px">
+          <mj-column>
+            <mj-text font-weight="700" font-size="19px" color="black">Customer Information</mj-text>
+          </mj-column>
+        </mj-section>
+        <mj-text font-size="13px" color="black">
+          <span>Shipped to:</span>
+          <br>
+          <br>
+          <strong>Kimi Raikkonen</strong>
+          <br>
+          <br>
+          <span>630 Chestnut St.</span>
+          <br>
+          <br>
+          <span>Bldg. 5 Unit #1234</span>
+          <br>
+          <br>
+          <span>Clearwater, FL 123456</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-bottom="0px">
+      <mj-column>
+        <mj-text font-weight="700" font-size="19px" color="black">Order Summary</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-wrapper>
+      <mj-section padding="0px">
+        <mj-column padding="0px">
+          <mj-text font-size="13px" line-height="21px" color="black">
+            <strong>Product 1</strong>
+            <br>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc odio, pretium eu tincidunt sit amet, consectetur efficitur dolor.</span>
+            <br>
+            <span> Qty: 1</span>
+            <br>
+            <span> Price: $99.99</span>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="solid" border-color="rgba(0,0,0,.2)" />
+          <mj-text font-size="13px" line-height="21px" color="black">
+            <strong>Product 2</strong>
+            <br>
+            <span>Vivamus sapien arcu, egestas ut suscipit nec, consectetur nec ante. Pellentesque hendrerit dolor eget diam varius.</span>
+            <br>
+            <span> Qty: 1</span>
+            <br>
+            <span> Price: $9999.99</span>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="solid" border-color="rgba(0,0,0,.2)" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

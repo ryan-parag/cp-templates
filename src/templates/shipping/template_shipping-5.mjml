@@ -1,0 +1,90 @@
+<mjml>
+  <mj-head>
+    <mj-font name="IBM Plex Mono" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" />
+    <mj-attributes>
+       <mj-all font-family="IBM Plex Mono, monospace"/>
+    </mj-attributes>
+    <mj-style inline="inline">
+    </mj-style>
+  </mj-head>
+  <mj-body>
+
+    <!-- title, Merchant Name and Order Number -->
+    <mj-section border-bottom="1px solid rgba(0,0,0,.2)">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="26px" color="black">Billing Reminder</mj-text>
+        <mj-text align="center" font-weight="700" font-size="13px" color="black">{{ merchant_name }}</mj-text>
+        <mj-text align="center" font-size="13px" align="right" color="black">No : {{ billing_id }}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Intro text -->
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-text font-size="13px" align="left" color="black" line-height="1.6">
+          <p>Dear {{ full_name }}, This is a friendly reminder that your recurring payment had been processed on {{ process_date }}. Please be advised your next payment will occur 30 days from this date. Below you will find the order summary and payment information about your recurring payment.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Order Summary Table -->
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="16px" color="black">Order Summary</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px" background-color="rgba(0,0,0,.05)">
+      <mj-column padding="0px 50px">
+        <mj-table>
+          <tr>
+            <td style="padding: 10px 5px;">Retail Product 1</td>
+            <td style="padding: 10px 5px;">Qty: 1</td>
+            <td style="padding: 10px 5px; text-align:right;">$99.99</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 5px;">Retail Product 2</td>
+            <td style="padding: 10px 5px;">Qty: 1</td>
+            <td style="padding: 10px 5px; text-align:right;">$9999.99</td>
+          </tr>
+          <tr style="font-weight: 700; border-top: 1px solid rgba(0,0,0,.2);">
+            <td style="padding: 10px 5px;">Total</td>
+            <td style="padding: 10px 5px;"></td>
+            <td style="padding: 10px 5px; text-align:right;">$10099.98</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Customer and payment information -->
+    <mj-section padding-bottom="0px">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="19px" color="black">Customer and Payment Information</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-text align="center" font-size="13px" color="black">
+          <span style="color:rgba(0,0,0,.5)">Delivered to:</span>
+          <br>
+          <br>
+          <strong>Kimi Raikkonen</strong>
+          <br>
+          <br>
+          <span>630 Chestnut St., Bldg. 5 Unit #1234, Clearwater, FL 123456</span>
+        </mj-text>
+        <mj-text align="center" font-size="13px" color="black">
+          <span style="color:rgba(0,0,0,.5)">Shipped to:</span>
+          <br>
+          <br>
+          <strong>Kimi Raikkonen</strong>
+          <br>
+          <br>
+          <span>630 Chestnut St., Bldg. 5 Unit #1234, Clearwater, FL 123456</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
